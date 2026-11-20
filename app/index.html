@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · All 55 PS5 Trophies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="top">
+  <p class="kicker">GRAND THEFT AUTO VI &middot; PLAYSTATION 5 &middot; OFFLINE GUIDE &amp; TRACKER</p>
+  <h1>Leonida Trophy Guide</h1>
+  <p class="sub">Every one of the 55 official trophies — with a cited guide, a roadmap to the platinum, and a tracker that saves your progress in this browser.</p>
+  <ul class="stats" id="stats">
+    <li><strong>55</strong><span>trophies</span></li>
+    <li><strong>1</strong><span>platinum</span></li>
+    <li><strong>2</strong><span>gold</span></li>
+    <li><strong>6</strong><span>silver</span></li>
+    <li><strong>46</strong><span>bronze</span></li>
+    <li><strong>28</strong><span>hidden</span></li>
+    <li><strong>0</strong><span>online</span></li>
+    <li><strong>~200h</strong><span>to platinum</span></li>
+  </ul>
+  <div class="progress" id="progressBox">
+    <div class="progressRow"><span id="progressText">0 of 55 earned</span><span id="progressPct">0%</span></div>
+    <div class="bar"><div class="fill" id="progressFill"></div></div>
+    <p class="progressGrades" id="progressGrades"></p>
+  </div>
+</header>
+<nav class="views" id="views">
+  <button type="button" id="viewChecklist" class="viewBtn active">Checklist</button>
+  <button type="button" id="viewRoadmap" class="viewBtn">Roadmap to Platinum</button>
+</nav>
+<section class="controls" id="controls">
+  <label class="search">Search <input id="search" type="search" placeholder="Trophy name or keyword…" autocomplete="off"></label>
+  <div class="chips" id="kindChips" role="group" aria-label="Filter by kind">
+    <button type="button" data-kind="all" class="chip active">All 55</button>
+    <button type="button" data-kind="story" class="chip">Story</button>
+    <button type="button" data-kind="missable" class="chip">Missable</button>
+    <button type="button" data-kind="collectible" class="chip">Collectibles</button>
+    <button type="button" data-kind="activity" class="chip">Activities</button>
+    <button type="button" data-kind="side" class="chip">Side Missions</button>
+    <button type="button" data-kind="crime" class="chip">Crime</button>
+    <button type="button" data-kind="online" class="chip">Online</button>
+  </div>
+  <div class="controlsRow">
+    <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+    <label class="toggle"><input id="spoiler" type="checkbox"> Spoiler-safe: hide story &amp; hidden trophies until earned</label>
+    <button id="export" type="button">Export progress</button>
+    <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+  </div>
+</section>
+<p class="missableBanner" id="missableBanner"><strong>Only 1 missable trophy:</strong> Positive Mental Attitude — meditate on the balcony at Jason&rsquo;s house in Chapter 1, after the mission Down to Earth, before the chapter ends. Every other trophy can be earned in free roam after the story.</p>
+<main>
+  <section id="checklistView">
+    <p class="empty" id="emptyState" hidden></p>
+    <ol class="trophies" id="trophyList"></ol>
+  </section>
+  <section id="roadmapView" hidden>
+    <h2 id="roadmapTitle">Roadmap to the platinum</h2>
+    <p id="roadmapSummary"></p>
+    <ol class="roadmap" id="roadmapList"></ol>
+  </section>
+</main>
+<footer id="sources">
+  <h2>About this guide</h2>
+  <p>Official trophy names, descriptions and grades are shown as PlayStation publishes them (via Exophase and PSNProfiles). Every guide is written in our own words for this entry and cites its sources beside it — a guide never copies another guide&rsquo;s text. Methods marked unconfirmed are ones no published guide had verified as of 20 November 2026. Not affiliated with Rockstar Games, Take-Two Interactive or Sony Interactive Entertainment. No Rockstar logo, artwork or game screenshots are used; the look is our own.</p>
+  <p class="offline">Works fully offline: this page loads only its own files and saves your progress in this browser (localStorage). Export keeps a backup file you can import on another device.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
